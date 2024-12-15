@@ -27,7 +27,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Create Reminder Issue
-      uses: peter-evans/create-issue-from-file@v4
+      uses: ursa-mikail/create-issue-from-file@v4
       with:
         title: 'Daily Reminder'
         content-filepath: '.github/ISSUE_TEMPLATE/reminder.md'
