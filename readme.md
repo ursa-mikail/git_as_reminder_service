@@ -52,3 +52,11 @@ This is your daily reminder to check on the tasks and progress for the day.
 Step 5: Commit and Push the Workflow
 Commit your changes and push them to your GitHub repository. The workflow will now run every day at 9 AM UTC, creating an issue titled "Daily Reminder" with the content specified in your template.
 
+## Caveats:
+
+```
+As the workflow may not be stable, it is good to set 2 tasks at least:
+1. 1 as a liveness test (as confirmation liveness test)
+2. the 2nd is the actual task
+
+```
