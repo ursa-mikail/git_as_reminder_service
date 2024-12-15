@@ -38,3 +38,9 @@ jobs:
         title: 'Daily Reminder'
         content-filepath: '.github/ISSUE_TEMPLATE/reminder.md'
         labels: reminder
+        update_existing: true
+        search_existing: open
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+                
