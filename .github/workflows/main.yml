@@ -35,8 +35,9 @@ jobs:
       #  labels: reminder
       uses: JasonEtco/create-an-issue@v2
       with:
-        title: 'Daily Reminder'
-        content-filepath: '.github/ISSUE_TEMPLATE/reminder.md'
+        filename: '.github/ISSUE_TEMPLATE/reminder.md'
+        #title: 'Daily Reminder'
+        #content-filepath: '.github/ISSUE_TEMPLATE/reminder.md'
         #labels: reminder
         update_existing: true
         search_existing: open
