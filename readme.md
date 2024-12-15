@@ -5,6 +5,7 @@ Create a new repository on GitHub where you want to set up your reminders.
 Step 2: Create a GitHub Actions Workflow
 Navigate to the Actions tab in your repository.
 Click on "New workflow" and then on "set up a workflow yourself".
+
 Step 3: Define the Workflow
 Create a YAML file for your workflow. This file will define the schedule and actions that will create reminders.
 
