@@ -1,0 +1,22 @@
+name: Create Reminder Issues
+
+on:
+  schedule:
+    # Runs at 9 AM every day
+    - cron: '0 9 * * *'
+  workflow_dispatch: # This allows you to manually trigger the workflow
+
+jobs:
+  create-reminder:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Create Reminder Issue
+      uses: peter-evans/create-issue-from-file@v4
+      with:
+        title: 'Daily Reminder'
+        content-filepath: '.github/ISSUE_TEMPLATE/reminder.md'
+        labels: reminder
