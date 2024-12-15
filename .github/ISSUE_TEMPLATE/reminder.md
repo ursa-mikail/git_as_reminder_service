@@ -1,3 +1,7 @@
+---
+title: "Daily Reminder"
+---
+
 ## Daily Reminder
 
 This is your daily reminder to check on the tasks and progress for the day.
