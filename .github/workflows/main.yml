@@ -4,7 +4,13 @@ on:
   schedule:
     # cron: '0 9 15 12 *' # Runs at 09:00 on December 15th (UTC)
     # Runs at 9 AM every day
-    - cron: '0 * * * *' 
+    # - cron: '0 * * * *' # hourly
+    - cron: '*/5 * * * *' # Every 5 minutes'
+    # * * * * * Every minute
+    # 0 * * * * Every hour
+    # 0 0 * * * Every day at 12:00 AM
+    # 0 0 * * FRI At 12:00 AM, only on Friday
+    # 0 0 1 * * At 12:00 AM, on day 1 of the month
   workflow_dispatch: # This allows you to manually trigger the workflow
 
 
@@ -22,7 +28,12 @@ jobs:
 
     - name: Create Reminder Issue
       #if: steps.year-check.outputs.year == '2025'  # Runs only if the year is 2025
-      uses: ursa-mikail/create-issue-from-file@v4
+      #uses: ursa-mikail/create-issue-from-file@v4
+      #with:
+      #  title: 'Daily Reminder'
+      #  content-filepath: '.github/ISSUE_TEMPLATE/reminder.md'
+      #  labels: reminder
+      uses: JasonEtco/create-an-issue@v2
       with:
         title: 'Daily Reminder'
         content-filepath: '.github/ISSUE_TEMPLATE/reminder.md'
