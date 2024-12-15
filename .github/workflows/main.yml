@@ -20,7 +20,7 @@ jobs:
       run: echo "::set-output name=year::$(date +'%Y')"
 
     - name: Create Reminder Issue
-      if: steps.year-check.outputs.year == '2025'  # Runs only if the year is 2025
+      #if: steps.year-check.outputs.year == '2025'  # Runs only if the year is 2025
       uses: ursa-mikail/create-issue-from-file@v4
       with:
         title: 'Daily Reminder'
