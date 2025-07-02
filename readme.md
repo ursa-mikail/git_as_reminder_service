@@ -97,3 +97,18 @@ As the workflow may not be stable, it is good to set 2 tasks at least:
 2. the 2nd is the actual task
 
 ```
+
+Ensure workflow has write permissions enabled:
+
+Go to your repository on GitHub
+
+Click Settings → Actions → General
+
+Scroll to Workflow permissions (https://github.com/ursa-mikail/git_as_reminder_service/settings/actions)
+
+Ensure Read and write permissions is selected for the GITHUB_TOKEN
+(If it’s set to read-only, your workflow can’t create/update issues.)
+
+No further action needed! The token is available to your workflows by default
+
+
