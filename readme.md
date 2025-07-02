@@ -101,8 +101,9 @@ Settings → Developer settings → Personal access tokens → Tokens (https://g
 
 or 👉 (https://github.com/settings/tokens)
 
-
+```
 ciphered_PAT: U2FsdGVkX19gaveSXCX7K3rNxb0EFQ6tOJHvVHtf3WF9czwXP1xfjqwN4Qy+IXY0Om5Zj/reHYCAwhSWouFpwQ==
+```
 
 To push the updates of this repo:
 ```
