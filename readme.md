@@ -99,7 +99,10 @@ As the workflow may not be stable, it is good to set 2 tasks at least:
 ```
 Settings → Developer settings → Personal access tokens → Tokens (https://github.com/settings/apps)
 
-U2FsdGVkX1+7TtLL8EZXcO+sDvRQ830mnmRH+1bPozCC3DDFIc4hyk/kAlvk6OBrlMhC6s/DVrAJypjnA/6zdQ==
+or 👉 (https://github.com/settings/tokens)
+
+
+ciphered_PAT: U2FsdGVkX19gaveSXCX7K3rNxb0EFQ6tOJHvVHtf3WF9czwXP1xfjqwN4Qy+IXY0Om5Zj/reHYCAwhSWouFpwQ==
 
 To push the updates of this repo:
 ```
