@@ -97,7 +97,16 @@ As the workflow may not be stable, it is good to set 2 tasks at least:
 2. the 2nd is the actual task
 
 ```
+Settings → Developer settings → Personal access tokens → Tokens (https://github.com/settings/apps)
 
+U2FsdGVkX1+7TtLL8EZXcO+sDvRQ830mnmRH+1bPozCC3DDFIc4hyk/kAlvk6OBrlMhC6s/DVrAJypjnA/6zdQ==
+
+To push the updates of this repo:
+```
+git remote set-url origin https://ursa-mikail:<YOUR_NEW_PAT>@github.com/ursa-mikail/git_as_reminder_service.git
+
+git push origin main
+```
 Ensure workflow has write permissions enabled:
 
 Go to your repository on GitHub
